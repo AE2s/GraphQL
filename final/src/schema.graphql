@@ -1,3 +1,26 @@
+scalar Date
+
+type Character {
+    id:       ID!,
+    male:      Boolean
+    house:     String,
+    slug:      String,
+    name:      String,
+    books:     [String],
+    titles:    [String]
+}
+
+type City {
+    id:       ID!,
+    name:      String,
+    latitude:      Float
+    longitude:     Float,
+    type:      String,
+    link:     String,
+}
+
+
 type Query {
-    hello : String
+    characters : [Character]
+    cities : [City]
 }
