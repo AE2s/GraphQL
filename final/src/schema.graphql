@@ -1,4 +1,7 @@
-scalar Date
+type Query {
+    characters : [Character]
+    character(name: String!) : Character
+}
 
 type Character {
     id:       ID!,
@@ -8,19 +11,4 @@ type Character {
     name:      String,
     books:     [String],
     titles:    [String]
-}
-
-type City {
-    id:       ID!,
-    name:      String,
-    latitude:      Float
-    longitude:     Float,
-    type:      String,
-    link:     String,
-}
-
-
-type Query {
-    characters : [Character]
-    cities : [City]
 }

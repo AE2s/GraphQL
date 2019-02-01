@@ -1,11 +1,17 @@
-const client = require('./gameOfThronesApi');
+const gameOfThronesApi = require('./gameOfThronesApi');
 
 class Characters {
 
     async getAllCharacters() {
-        const characters = await client.get('/characters');
+        const characters = await gameOfThronesApi.get('/characters');
+        await this.getCharacterByName("jon%20snow")
 
         return Array.isArray(characters.data) ? characters.data.map(character => this.characterReducer(character)) : [];
+    }
+
+    async getCharacterByName(name) {
+        const characters = await gameOfThronesApi.get(`/characters/${name}`);
+        return this.characterReducer(characters.data.data);
     }
 
     characterReducer(character) {
