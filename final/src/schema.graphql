@@ -1,6 +1,24 @@
 type Query {
     characters : [Character]
     character(name: String!) : Character
+    houses: [House]
+}
+
+type Mutation {
+    """
+    Create a new house
+    """
+    createHouse(id: ID!, name: String!, words: String): [House]!,
+
+    """
+    Update an existing house
+    """
+    updateHouse(id: ID!, name: String!, words: String): [House]!,
+
+    """
+    Delete a house
+    """
+    deleteHouse(id: ID!): [House]!,
 }
 
 type Character {
@@ -11,4 +29,10 @@ type Character {
     name:      String,
     books:     [String],
     titles:    [String]
+}
+
+type House {
+    id:       ID!,
+    name:      String,
+    words:      String
 }

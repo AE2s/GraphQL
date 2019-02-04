@@ -1,6 +1,6 @@
 const gameOfThronesApi = require('./gameOfThronesApi');
 
-class Characters {
+export default class Characters {
 
     async getAllCharacters() {
         const characters = await gameOfThronesApi.get('/characters');
@@ -26,5 +26,3 @@ class Characters {
         };
     }
 }
-
-module.exports = Characters;
