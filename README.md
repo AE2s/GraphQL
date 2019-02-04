@@ -7,6 +7,7 @@ This project is used to learn the basics of GraphQL, if you're interested go che
 ## Run the project with npm:
 
 ```bash
+$ cd final/
 $ npm install
 $ npm run dev
 $ ...
