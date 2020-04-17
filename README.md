@@ -31,6 +31,4 @@ $ dotnet build
 $ dotnet run
 $ cd .\ClientDotNet\
 $ dotnet run
-$ ...
-$ 🚀 Server ready at http://localhost:4000
 ```
