@@ -1,0 +1,38 @@
+type Query {
+  characters: [Character]
+  character(name: String!): Character
+  houses: [House]
+}
+
+type Character {
+  id: ID!
+  male: Boolean
+  house: String
+  slug: String
+  name: String
+  books: [String]
+  titles: [String]
+}
+
+type Mutation {
+  """
+  Create a new house
+  """
+  createHouse(id: ID!, name: String!, words: String): [House]!
+
+  """
+  Update an existing house
+  """
+  updateHouse(id: ID!, name: String!, words: String): [House]!
+
+  """
+  Delete a house
+  """
+  deleteHouse(id: ID!): [House]!
+}
+
+type House {
+  id: ID!
+  name: String
+  words: String
+}
