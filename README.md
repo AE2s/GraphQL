@@ -1,15 +1,36 @@
-# Graphql Server
+# Graphql Server & client (React and .NET)
 
-A minimalist graphql server using [Graphpack](https://github.com/glennreyes/graphpack)
+Discover GraphQL : create a server and two clients (react & .NET)
 
-This project is used to learn the basics of GraphQL. For more information check the related [tutotial](http://blog.soat.fr/2019/02/initiation-a-graphql/)
-
-## Run the project with npm:
+## Graphql Server
 
 ```bash
-$ cd final/
+$ cd server/
 $ npm install
 $ npm run dev
+$ ...
+$ 🚀 Server ready at http://localhost:4000
+```
+
+## Graphql client React
+
+```bash
+$ cd client/
+$ npm install
+$ npm start
+$ ...
+$ client ready at http://localhost:3000
+```
+
+## Graphql client .NET
+
+```bash
+$ cd clientDotNet/
+$ dotnet restore
+$ dotnet build
+$ dotnet run
+$ cd .\ClientDotNet\
+$ dotnet run
 $ ...
 $ 🚀 Server ready at http://localhost:4000
 ```
