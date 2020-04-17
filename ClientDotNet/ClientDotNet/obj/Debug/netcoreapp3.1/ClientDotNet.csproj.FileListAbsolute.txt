@@ -1,0 +1,15 @@
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\bin\Debug\netcoreapp3.1\ClientDotNet.exe
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\obj\Debug\netcoreapp3.1\ClientDotNet.csprojAssemblyReference.cache
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\obj\Debug\netcoreapp3.1\ClientDotNet.AssemblyInfoInputs.cache
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\obj\Debug\netcoreapp3.1\ClientDotNet.AssemblyInfo.cs
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\bin\Debug\netcoreapp3.1\ClientDotNet.deps.json
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\bin\Debug\netcoreapp3.1\ClientDotNet.runtimeconfig.json
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\bin\Debug\netcoreapp3.1\ClientDotNet.runtimeconfig.dev.json
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\bin\Debug\netcoreapp3.1\ClientDotNet.dll
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\bin\Debug\netcoreapp3.1\ClientDotNet.pdb
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\obj\Debug\netcoreapp3.1\ClientDotNet.dll
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\obj\Debug\netcoreapp3.1\ClientDotNet.pdb
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\obj\Debug\netcoreapp3.1\ClientDotNet.genruntimeconfig.cache
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\obj\Debug\netcoreapp3.1\ClientDotNet.csproj.CoreCompileInputs.cache
+C:\Users\LaCombeDuLionVert_1\Documents\KataTrainReservation\GraphQL\graphql-server\ClientDotNet\ClientDotNet\obj\Debug\netcoreapp3.1\ClientDotNet.csproj.CopyComplete

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/yUpkC2v1C96hWbl1NEGNOS6sIXYevZlGZ8l9zvy+QSHxr9Kq21SIboJPzE0jpepA7x7zzpWJyhFxsylXi0gOw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LaCombeDuLionVert_1\\Documents\\KataTrainReservation\\GraphQL\\graphql-server\\ClientDotNet\\ClientDotNet\\ClientDotNet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LaCombeDuLionVert_1\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
