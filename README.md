@@ -34,4 +34,3 @@ $ dotnet run
 $ ...
 $ 🚀 Server ready at http://localhost:4000
 ```
-Then go check http://localhost:4000 and have fun ;)
