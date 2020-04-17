@@ -37,7 +37,7 @@ const App = () => {
   const id = 5;
   const name = 'houseTest';
   const words = 'Best house ever';
-  const { loading, error, data } = useQuery(CHARACTER_QUERY);
+  const { loading, error, data, refetch } = useQuery(CHARACTER_QUERY);
 
   const [createHouse] = useMutation(CREATE_HOUSE);
 
@@ -62,7 +62,9 @@ const App = () => {
           createHouse({
             variables: { id, name, words },
           })
-            .then(({ data }) => {})
+            .then(({ data }) => {
+              refetch();
+            })
             .catch((e) => {
               console.log(e);
             });
@@ -76,7 +78,9 @@ const App = () => {
           deleteHouse({
             variables: { id },
           })
-            .then(({ data }) => {})
+            .then(({ data }) => {
+              refetch();
+            })
             .catch((e) => {
               console.log(e);
             });
