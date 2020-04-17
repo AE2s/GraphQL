@@ -5,18 +5,27 @@ import { useQuery, gql, useMutation } from '@apollo/client';
 
 const CHARACTER_QUERY = gql`
   {
-    character(name: $name) {
-      male
+    houses {
+      id
       name
-      books
-      titles
+      words
     }
   }
 `;
 
 const CREATE_HOUSE = gql`
-  mutation CreateHouse($houseId: ID!, $houseName: String!, $words: String) {
-    createHouse(id: $houseId, name: $houseName, words: $houseWords) {
+  mutation createHouse($id: ID!, $name: String!, $words: String) {
+    createHouse(id: $id, name: $name, words: $words) {
+      id
+      name
+      words
+    }
+  }
+`;
+
+const DELETE_HOUSE = gql`
+  mutation deleteHouse($id: ID!) {
+    deleteHouse(id: $id) {
       id
       name
       words
@@ -25,43 +34,55 @@ const CREATE_HOUSE = gql`
 `;
 
 const App = () => {
-  const name = 'Addam Marbrand';
-  const houseId = 5;
-  const houseName = 'houseTest';
-  const houseWords = 'Best house ever';
-  const { loading, error, data } = useQuery(CHARACTER_QUERY, {
-    variables: { name },
-  });
-  console.log(data);
+  const id = 5;
+  const name = 'houseTest';
+  const words = 'Best house ever';
+  const { loading, error, data } = useQuery(CHARACTER_QUERY);
 
-  const [addHouse, { ...rest }] = useMutation(CREATE_HOUSE);
+  const [createHouse] = useMutation(CREATE_HOUSE);
+
+  const [deleteHouse] = useMutation(DELETE_HOUSE);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
   return (
     <div>
-      {data.character.name}
-      <h4>Books : </h4>
-      <ul>
-        {data.character.books.map((x: any) => (
-          <li key={x}>{x}</li>
-        ))}
-      </ul>
-      <h4>Titles : </h4>
-      <ul>
-        {data.character.titles.map((x: any) => (
-          <li key={x}>{x}</li>
-        ))}
-      </ul>
+      <h4>Houses : </h4>
+      {data.houses.map((x: any) => (
+        <ul key={x.id}>
+          <li>{x.id}</li>
+          <li>{x.name}</li>
+          <li>{x.words}</li>
+        </ul>
+      ))}
+
       <button
         onClick={() => {
-          addHouse({
-            variables: { houseId, houseName, houseWords },
-          });
+          createHouse({
+            variables: { id, name, words },
+          })
+            .then(({ data }) => {})
+            .catch((e) => {
+              console.log(e);
+            });
         }}
       >
         Add house
+      </button>
+
+      <button
+        onClick={() => {
+          deleteHouse({
+            variables: { id },
+          })
+            .then(({ data }) => {})
+            .catch((e) => {
+              console.log(e);
+            });
+        }}
+      >
+        delete house
       </button>
     </div>
   );
